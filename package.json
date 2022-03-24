@@ -6,7 +6,9 @@
 		"start": "webpack serve --port 3000",
 		"build": "NODE_ENV=production webpack",
 		"lint": "eslint src/ --fix",
-		"test": "jest --watch"
+		"lint:ci": "eslint src/",
+		"test": "jest --watch",
+		"test:ci": "jest"
 	},
 	"keywords": [],
 	"author": "Ricky Davenport",
