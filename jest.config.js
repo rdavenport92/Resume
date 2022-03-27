@@ -12,6 +12,7 @@ const tsPaths = Object.keys(paths).reduce((fullPaths, currentPathKey) => {
 
 module.exports = {
 	testEnvironment: 'jsdom',
+	modulePaths: [compilerOptions.baseUrl],
 	moduleNameMapper: {
 		...tsPaths,
 		'^.+\\.(css|scss)$': 'babel-jest'
