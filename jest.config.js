@@ -6,7 +6,7 @@ const paths = pathsToModuleNameMapper(compilerOptions.paths);
 const tsPaths = Object.keys(paths).reduce((fullPaths, currentPathKey) => {
 	return {
 		...fullPaths,
-		[currentPathKey]: `<rootDir>/${compilerOptions.baseUrl}/${paths[currentPathKey]}`
+		[currentPathKey]: `<rootDir>/src/${paths[currentPathKey]}`
 	};
 }, {});
 
@@ -16,5 +16,5 @@ module.exports = {
 		...tsPaths,
 		'^.+\\.(css|scss)$': 'babel-jest'
 	},
-	setupFilesAfterEnv: [`<rootDir>/${compilerOptions.baseUrl}/setupTests.ts`]
+	setupFilesAfterEnv: [`<rootDir>/src/setupTests.ts`]
 };
