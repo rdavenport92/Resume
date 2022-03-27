@@ -1,8 +1,11 @@
 const prod = process.env.NODE_ENV === 'production';
 
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TsConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
+const env = require('dotenv').config().parsed;
 
 module.exports = {
 	mode: prod ? 'production' : 'development',
@@ -32,6 +35,7 @@ module.exports = {
 	},
 	devtool: prod ? undefined : 'source-map',
 	plugins: [
+		new webpack.EnvironmentPlugin(['NODE_ENV', Object.keys(env)]),
 		new HtmlWebpackPlugin({
 			template: 'public/index.html'
 		}),
