@@ -12,12 +12,12 @@
 		"skipLibCheck": true,
 		"baseUrl": "./src",
 		"paths": {
-			"@components": ["components"],
-			"@providers": ["providers"],
-			"@views": ["views"],
-			"@layout": ["layout"],
-			"@utils": ["utils"],
-			"@types": ["types"]
+			"@components": ["components/"],
+			"@providers": ["providers/"],
+			"@views": ["views/"],
+			"@layout": ["layout/"],
+			"@utils": ["utils/"],
+			"@types": ["types/"]
 		}
 	},
 	"exclude": ["node_modules"]
