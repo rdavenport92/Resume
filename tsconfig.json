@@ -12,12 +12,12 @@
 		"skipLibCheck": true,
 		"baseUrl": "./src",
 		"paths": {
-			"@components": ["components/"],
-			"@providers": ["providers/"],
-			"@views": ["views/"],
-			"@layout": ["layout/"],
-			"@utils": ["utils/"],
-			"@types": ["types/"]
+			"@components": ["components/index.ts"],
+			"@providers": ["providers/index.ts"],
+			"@views": ["views/index.ts"],
+			"@layout": ["layout/index.ts"],
+			"@utils": ["utils/index.ts"],
+			"@types": ["types.ts"]
 		}
 	},
 	"exclude": ["node_modules"]
