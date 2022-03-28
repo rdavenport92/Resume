@@ -11,8 +11,8 @@ export interface IRawCandidate {
 		Email?: string;
 		Phone?: string;
 		Sites?: {
-			text?: string;
-			url?: string;
+			Text?: string;
+			Url?: string;
 		}[];
 	};
 	Summary?: string;
