@@ -31,6 +31,10 @@ jobs:
           npm run build
 
       - name: Deploy
-        run: |
-          apt-get update -qq && apt-get install -y -qq lftp
-          lftp -c "set ftp:ssl-allow no; open -u ${{ secrets.DEPLOY_USERNAME }},${{ secrets.DEPLOY_PASSWD }} ${{ secrets.DEPLOY_HOSTNAME }}; mirror -Rnev ./build/ /test/ --ignore-time --parallel=10"
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.DEPLOY_HOSTNAME }}
+          username: ${{ secrets.DEPLOY_USERNAME }}
+          password: ${{ secrets.DEPLOY_PASSWD }}
+          local-dir: ./build/
+          server-dir: test/
