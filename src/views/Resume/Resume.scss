@@ -1,0 +1,15 @@
+.resume {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	animation: fadein 1s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
