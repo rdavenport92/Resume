@@ -1,0 +1,16 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: rgb(69, 95, 104);
+	color: white;
+	padding-left: 24px;
+	padding-top: 14px;
+	padding-bottom: 7px;
+
+	h1,
+	h4 {
+		margin: 0px;
+		padding-bottom: 14px;
+	}
+}
