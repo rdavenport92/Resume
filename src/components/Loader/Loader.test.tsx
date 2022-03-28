@@ -1,22 +1,22 @@
 import { render, screen } from '@testing-library/react';
 import Loader from './Loader';
 
-const spinningCirclesDataTestId = 'circlesDataTestId';
+const loaderComponentDataTestId = 'circlesDataTestId';
 
-jest.mock('react-loading-icons', () => {
-	function MockSpinningCircles() {
-		return <div data-testid={spinningCirclesDataTestId} />;
+jest.mock('react-loader-spinner', () => {
+	function MockFallingLines() {
+		return <div data-testid={loaderComponentDataTestId} />;
 	}
 
 	return {
-		SpinningCircles: MockSpinningCircles
+		FallingLines: MockFallingLines
 	};
 });
 
 describe('Loader', () => {
-	it('renders SpinningCircles', () => {
+	it('renders loader component', () => {
 		render(<Loader />);
 
-		expect(screen.queryByTestId(spinningCirclesDataTestId)).toBeInTheDocument();
+		expect(screen.queryByTestId(loaderComponentDataTestId)).toBeInTheDocument();
 	});
 });
