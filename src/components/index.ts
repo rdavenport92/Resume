@@ -15,3 +15,4 @@ export { default as Cert } from './Cert/Cert';
 export { default as Loader } from './Loader/Loader';
 export { default as Company } from './Company/Company';
 export { default as CompanyHeader } from './CompanyHeader/CompanyHeader';
+export { default as AppTitle } from './AppTitle/AppTitle';
