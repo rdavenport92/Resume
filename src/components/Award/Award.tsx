@@ -7,8 +7,11 @@ const coercePlace = (place: number) =>
 function Award({ presenter, category, place }: IAward) {
 	return (
 		<div className="award">
-			<div>{`${presenter} - ${category}`}</div>
-			<div>{place && ` ${coercePlace(place)} Place`}</div>
+			<div>{`${presenter}`}</div>
+			<div>
+				{category}
+				{place && ` - ${coercePlace(place)} Place`}
+			</div>
 		</div>
 	);
 }
