@@ -13,7 +13,7 @@ function CertAwards() {
 					<Cert key={cert.name} {...cert} />
 				))}
 				{awards.map((award) => (
-					<Award key={award.category} {...award} />
+					<Award key={`${award.presenter}${award.category}`} {...award} />
 				))}
 			</>
 		</Category>
