@@ -1,16 +1,25 @@
 .header {
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
 	background-color: rgb(69, 95, 104);
-	color: white;
-	padding-left: 24px;
-	padding-top: 14px;
-	padding-bottom: 7px;
+	color: #ffffff;
+	height: 100px;
+
+	.menu-icon {
+		height: 100%;
+		display: flex;
+		padding-right: 24px;
+		align-items: center;
+	}
 
 	h1,
 	h4 {
 		margin: 0px;
-		padding-bottom: 14px;
+		padding-left: 24px;
+		padding-bottom: 7px;
+	}
+
+	h1 {
+		padding-top: 14px;
 	}
 }

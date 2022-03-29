@@ -19,6 +19,10 @@ jest.mock('@layout', () => {
 	};
 });
 
+jest.mock('@hooks', () => ({
+	useMediaQueryMatch: () => false
+}));
+
 describe('Resume', () => {
 	it('renders header', () => {
 		render(<Resume />);
