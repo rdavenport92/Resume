@@ -3,7 +3,6 @@ export interface IRawCandidate {
 	Title?: string;
 	PersonalInfo?: {
 		Address?: {
-			Street?: string;
 			City?: string;
 			State?: string;
 			ZipCode?: string;
@@ -89,7 +88,6 @@ export interface ICandidate {
 	title: string;
 	personalInfo: {
 		address: {
-			street: string;
 			city: string;
 			state: string;
 			zipCode: string;

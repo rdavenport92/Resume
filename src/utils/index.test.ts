@@ -9,7 +9,6 @@ describe('utils', () => {
 				title: '',
 				personalInfo: {
 					address: {
-						street: '',
 						city: '',
 						state: '',
 						zipCode: ''
@@ -38,7 +37,6 @@ describe('utils', () => {
 				title: 'title',
 				personalInfo: {
 					address: {
-						street: 'street',
 						city: 'city',
 						state: 'state',
 						zipCode: 'zipCode'
@@ -87,7 +85,6 @@ describe('utils', () => {
 				Title: 'title',
 				PersonalInfo: {
 					Address: {
-						Street: 'street',
 						City: 'city',
 						State: 'state',
 						ZipCode: 'zipCode'

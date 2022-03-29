@@ -7,7 +7,6 @@ export const initializeCandidate = (
 	title: rawData.Title || '',
 	personalInfo: {
 		address: {
-			street: rawData.PersonalInfo?.Address?.Street || '',
 			city: rawData.PersonalInfo?.Address?.City || '',
 			state: rawData.PersonalInfo?.Address?.State || '',
 			zipCode: rawData.PersonalInfo?.Address?.ZipCode || ''

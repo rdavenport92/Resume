@@ -20,9 +20,8 @@ describe('Address', () => {
 	it('renders paragraph elements with address info', () => {
 		render(<Address />);
 
-		const [pStreet, pCityStateZip] = Array.from(document.querySelectorAll('p'));
+		const [pCityStateZip] = Array.from(document.querySelectorAll('p'));
 
-		expect(pStreet.innerHTML).toBe(mockAddress.street);
 		expect(pCityStateZip.innerHTML).toBe(
 			`${mockAddress.city}, ${mockAddress.state} ${mockAddress.zipCode}`
 		);
