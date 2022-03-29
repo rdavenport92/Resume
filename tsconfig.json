@@ -17,7 +17,8 @@
 			"@views": ["views"],
 			"@layout": ["layout"],
 			"@utils": ["utils"],
-			"@types": ["types"]
+			"@types": ["types"],
+			"@hooks": ["hooks"]
 		}
 	},
 	"exclude": ["node_modules"]
